@@ -119,8 +119,30 @@
   }
   .btn-ghost:hover{background:var(--ink); color:var(--cream);}
 
-  .hero-art{position:relative; height:420px; display:flex; align-items:center; justify-content:center;}
-  .petal{position:absolute; opacity:.85; animation:float 7s ease-in-out infinite;}
+.hero-art {
+    position: relative;
+    height: 420px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-padma {
+    width: 320px;
+    animation: flotar 5s ease-in-out infinite;
+}
+
+@keyframes flotar {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
   @keyframes float{
     0%,100%{transform:translateY(0) rotate(0deg);}
     50%{transform:translateY(-22px) rotate(12deg);}
@@ -340,30 +362,16 @@
 <section class="hero" id="inicio">
   <div class="hero-text reveal show">
     <span class="eyebrow">Tejido a mano · Medellín, Colombia</span>
-    <h1>Amigurumis con alma,<br>tejidos como una <em>flor de loto</em></h1>
-    <p>En Padma cada muñeco nace punto a punto, con hilo, paciencia y cariño. Piezas únicas para acompañar, regalar y coleccionar.</p>
+    <h1>Amigurumis con alma,<br>Hilos que cuentan historias,<em>puntadas que crean recuerdos.</em></h1>
+    <p>Hilos que cuentan historias, puntadas que crean recuerdos.</p>
     <div class="hero-ctas">
       <a href="#coleccion" class="btn-primary">Ver la colección</a>
       <a href="#historia" class="btn-ghost">Nuestra historia</a>
     </div>
   </div>
-  <div class="hero-art">
-    <svg class="petal" style="top:10px; left:10%; width:38px;" viewBox="0 0 40 40"><path d="M20 2C28 10 34 18 20 38C6 18 12 10 20 2Z" fill="#F2A6C4"/></svg>
-    <svg class="petal" style="top:60px; right:8%; width:26px; animation-delay:1.2s;" viewBox="0 0 40 40"><path d="M20 2C28 10 34 18 20 38C6 18 12 10 20 2Z" fill="#F3A93F"/></svg>
-    <svg class="petal" style="bottom:30px; left:18%; width:30px; animation-delay:2.4s; animation-name:floatSlow;" viewBox="0 0 40 40"><path d="M20 2C28 10 34 18 20 38C6 18 12 10 20 2Z" fill="#4F8B6E"/></svg>
-    <svg class="lotus-mascot" viewBox="0 0 320 320" fill="none">
-      <ellipse cx="160" cy="290" rx="90" ry="16" fill="#3B1F33" opacity="0.08"/>
-      <path d="M160 260C120 260 40 230 40 150C40 95 80 60 130 60C145 60 155 70 160 82C165 70 175 60 190 60C240 60 280 95 280 150C280 230 200 260 160 260Z" fill="#F2A6C4"/>
-      <path d="M160 260C135 260 90 240 70 190C110 210 140 218 160 218C180 218 210 210 250 190C230 240 185 260 160 260Z" fill="#D6478C"/>
-      <circle cx="130" cy="140" r="12" fill="#3B1F33"/>
-      <circle cx="190" cy="140" r="12" fill="#3B1F33"/>
-      <circle cx="126" cy="136" r="3.5" fill="white"/>
-      <circle cx="186" cy="136" r="3.5" fill="white"/>
-      <path d="M138 168C145 178 175 178 182 168" stroke="#3B1F33" stroke-width="4" stroke-linecap="round" fill="none"/>
-      <circle cx="105" cy="150" r="10" fill="#F5A9C4" opacity="0.7"/>
-      <circle cx="215" cy="150" r="10" fill="#F5A9C4" opacity="0.7"/>
-      <path d="M160 82C160 60 170 30 160 10C150 30 160 60 160 82Z" fill="#4F8B6E"/>
-    </svg>
+ <div class="hero-art">
+    <img class="logo-padma" src="/img/padma.png" alt="Logo Padma">
+</div>
   </div>
 </section>
 
